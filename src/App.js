@@ -1,17 +1,14 @@
 import "./index.css";
-import Counter from "./Counter";
+// import mycar from "./Car";
+// import Counter from "./Counter";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline container mx-auto mt-10 btn btn-error">
-        Hello world!
-      </h1>
-      start App
-      <hr />
-      <Counter />
-      <hr />
-      End App
+      <div className="bg-teal-950 h-screen">
+        <Navbar />
+      </div>
     </div>
   );
 }

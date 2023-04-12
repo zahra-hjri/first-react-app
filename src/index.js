@@ -1,13 +1,10 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 
-// const element = (
-//   <div>
-//     <h1>hello Zahra</h1>
-//     <p>hiiii</p>
-//   </div>
-// );
+// function Hello(props) {
+//   return <h1>Hello World!</h1>;
+// }
 
-ReactDom.render(<App />, document.getElementById("root"));
-// ReactDom.render(element, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
