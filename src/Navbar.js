@@ -1,6 +1,8 @@
 function Navbar() {
   function menuBar(e) {
-    console.log(e.target.classList);
+    e.target.classList.toggle("hidden");
+    // e.target.classList.add("hidden");
+    // e.target.className.add("hidden");
   }
   return (
     <div className="Navbar">

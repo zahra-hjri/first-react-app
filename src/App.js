@@ -1,5 +1,5 @@
 import "./index.css";
-// import mycar from "./Car";
+// import Car from "./Car";
 // import Counter from "./Counter";
 import Navbar from "./Navbar";
 
