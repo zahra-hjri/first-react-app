@@ -1,19 +1,31 @@
-import "./index.css";
 // import Car from "./Car";
 // import Counter from "./Counter";
+import "./index.css";
 import Navbar from "./Navbar";
+import ShoppingList from "./User";
+import Button from "./Button";
 
-function App() {
+import { useState } from "react";
+export default function App() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
   return (
     <div className="App">
-      <div className="bg-gray-100 h-screen">
+      <div className="bg-teal-950 h-screen">
         <Navbar />
+        <ShoppingList />
+        <Button count={count} onClick={handleClick} />
+        <Button count={count} onClick={handleClick} />
+        <Button count={count} onClick={handleClick} />
+
+        {/* <Profile /> */}
       </div>
     </div>
   );
 }
-
-export default App;
 
 /*------------------ class component ----------------*/
 // import { Component } from "react";
