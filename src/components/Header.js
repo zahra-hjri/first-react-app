@@ -5,13 +5,9 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center justify-between px-8 lg:px-40 py-8">
-      <a
-        href="/"
-        className="text-xl font-bold text-pink-900 cursor-pointer hover:text-green-500 flex"
-      >
+    <div className="flex items-center justify-between px-5 md:px-8 lg:px-40 pt-4">
+      <a href="/">
         <img src={Logo} className="h-16 w-16 rounded-full" alt="logo" />
-        {/* Dev. */}
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -43,17 +39,17 @@ export default function Header() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center text-black min-h-[200px]">
-              <li className="my-4 font-bold">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center text-black min-h-[200px] font-bold font-mono">
+              <li className="my-3">
                 <a href="/about">Work</a>
               </li>
-              <li className="my-4 font-bold">
+              <li className="my-3">
                 <a href="/portfolio">About</a>
               </li>
-              <li className="my-4 font-bold">
+              <li className="my-3">
                 <a href="/contact">Services</a>
               </li>
-              <li className="my-4 font-bold ">
+              <li className="my-3 ">
                 <a href="/contact" className="active px-6 py-3 rounded-sm">
                   Contact
                 </a>
@@ -62,7 +58,7 @@ export default function Header() {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex text-black lg:justify-center menu-list font-bold">
+        <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex text-black lg:justify-center menu-list font-bold font-mono">
           <li>
             <a href="/about" className="hover:text-green-600">
               Work
