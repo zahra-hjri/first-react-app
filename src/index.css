@@ -9,3 +9,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.logo {
+    background-image: url(./assets/Banner.png);
+}
+
+.menu-list>li>a {
+    font-size: 0.9rem;
+
+}
+
+a.active {
+    background-color: rgb(8, 221, 139);
+    /* padding-top: 0.4rem; */
+    /* border-radius: 0.2rem; */
+    /* display: block; */
+    /* margin-top: -0.5rem; */
+
+}
