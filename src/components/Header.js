@@ -5,7 +5,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center justify-between px-5 md:px-8 lg:px-40 pt-4">
+    <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 pt-4">
       <a href="/">
         <img src={Logo} className="h-16 w-16 rounded-full" alt="logo" />
       </a>
@@ -39,7 +39,7 @@ export default function Header() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center text-black min-h-[200px] font-bold font-mono">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden text-black min-h-[1px] font-bold font-mono">
               <li className="my-3">
                 <a href="/about">Work</a>
               </li>
