@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/first-react-app/static/css/main.549588e0.css",
-    "main.js": "/first-react-app/static/js/main.7b289b00.js",
+    "main.css": "/first-react-app/static/css/main.03a16c36.css",
+    "main.js": "/first-react-app/static/js/main.46166ad9.js",
     "static/media/Banner.png": "/first-react-app/static/media/Banner.a0ca3374ac451efa6ebd.png",
     "static/media/Jost-Medium.ttf": "/first-react-app/static/media/Jost-Medium.4f6adcce2a79bd449919.ttf",
     "static/media/Jost-Bold.ttf": "/first-react-app/static/media/Jost-Bold.ac6981857adf1ea5251e.ttf",
     "static/media/Jost-Regular.ttf": "/first-react-app/static/media/Jost-Regular.ba7997a1296d58137156.ttf",
+    "static/media/developer.jpg": "/first-react-app/static/media/developer.2dc3e3b8c00153d08fb5.jpg",
     "index.html": "/first-react-app/index.html",
-    "main.549588e0.css.map": "/first-react-app/static/css/main.549588e0.css.map",
-    "main.7b289b00.js.map": "/first-react-app/static/js/main.7b289b00.js.map"
+    "main.03a16c36.css.map": "/first-react-app/static/css/main.03a16c36.css.map",
+    "main.46166ad9.js.map": "/first-react-app/static/js/main.46166ad9.js.map"
   },
   "entrypoints": [
-    "static/css/main.549588e0.css",
-    "static/js/main.7b289b00.js"
+    "static/css/main.03a16c36.css",
+    "static/js/main.46166ad9.js"
   ]
 }
