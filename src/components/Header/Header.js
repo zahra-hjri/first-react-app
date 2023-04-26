@@ -1,12 +1,12 @@
 import { useState } from "react"; // import state
-import Logo from "../assets/logo.jpg";
+import Logo from "../../assets/logo.jpg";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 pt-4">
-      <a href="/">
+    <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 mt-5 lg:mt-10">
+      <a href="/About.jsx">
         <img src={Logo} className="h-16 w-16 rounded-full" alt="logo" />
       </a>
       <nav>
@@ -64,13 +64,14 @@ export default function Header() {
               Work
             </a>
           </li>
+
           <li>
             <a href="/portfolio" className="hover:text-green-600">
               About
             </a>
           </li>
           <li>
-            <a href="/contact" className="hover:text-green-600">
+            <a href="/service" className="hover:text-green-600">
               Services
             </a>
           </li>

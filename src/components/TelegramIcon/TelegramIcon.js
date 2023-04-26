@@ -1,8 +1,8 @@
-export default function Telegram() {
+export default function TelegramIcon() {
   return (
     <svg
-      width="64px"
-      height="64px"
+      width="50px"
+      height="50px"
       viewBox="0 0 192 192"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"

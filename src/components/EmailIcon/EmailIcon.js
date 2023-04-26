@@ -1,8 +1,8 @@
-export default function Email() {
+export default function EmailIcon() {
   return (
     <svg
-      width="60px"
-      height="60px"
+      width="50px"
+      height="50px"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"

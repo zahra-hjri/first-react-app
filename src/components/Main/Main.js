@@ -1,5 +1,5 @@
 // import Blob from "../assets/blob-green.jpg";
-import Developer from "../assets/developer.jpg";
+import Developer from "../../assets/developer.jpg";
 
 export default function Main() {
   return (
@@ -25,14 +25,6 @@ export default function Main() {
             a little aboute me
           </button>
         </p>
-      </div>
-      <div className="bg-transparent">
-        {/* <img src={Blob} alt="Blob" className="relative"></img>
-        <img
-          src={Blob}
-          alt="Blob"
-          className="lg:w-72 lg:h-60 absolute right-5"
-        ></img> */}
       </div>
     </section>
   );
