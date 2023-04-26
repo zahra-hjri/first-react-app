@@ -1,4 +1,4 @@
-export default function TelegramIcon() {
+const TelegramIcon = () => {
   return (
     <svg
       width="50px"
@@ -23,3 +23,4 @@ export default function TelegramIcon() {
     </svg>
   );
 }
+export default TelegramIcon;

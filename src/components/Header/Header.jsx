@@ -1,7 +1,9 @@
+
 import { useState } from "react"; // import state
 import Logo from "../../assets/logo.jpg";
 
-export default function Header() {
+const Header = () => {
+
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
@@ -39,7 +41,7 @@ export default function Header() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden text-black min-h-[1px] font-bold font-mono">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden text-black min-h-[200px] font-bold font-mono">
               <li className="my-3">
                 <a href="/about">Work</a>
               </li>
@@ -93,17 +95,20 @@ export default function Header() {
         display: block;
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height:800px;
+        min-height: 100%;
         top: 0;
         left: 0;
         background: white;
         z-index: 10;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        padding-top:100px;
         align-items: center;
+        
       }
     `}</style>
     </div>
   );
 }
+export default Header;

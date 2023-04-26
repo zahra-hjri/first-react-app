@@ -10,9 +10,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo {
-    background-image: url(./assets/Banner.png);
-}
+
 
 .menu-list>li>a {
     font-size: 0.9rem;

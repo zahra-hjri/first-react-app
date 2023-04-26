@@ -1,7 +1,7 @@
-// import Blob from "../assets/blob-green.jpg";
+
 import Developer from "../../assets/developer.jpg";
 
-export default function Main() {
+const Main = () => {
   return (
     <section className="flex-col sm:flex sm:flex-row-reverse md:justify-between px-5 lg:px-18 xl:px-20 md:my-4">
       <img
@@ -29,3 +29,4 @@ export default function Main() {
     </section>
   );
 }
+export default Main;

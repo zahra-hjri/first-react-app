@@ -1,4 +1,4 @@
-export default function LinkedInIcon() {
+const LinkedInIcon = () => {
   return (
     <svg
       width="50px"
@@ -25,3 +25,5 @@ export default function LinkedInIcon() {
     </svg>
   );
 }
+
+export default LinkedInIcon;

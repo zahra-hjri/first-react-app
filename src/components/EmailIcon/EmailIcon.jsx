@@ -1,4 +1,4 @@
-export default function EmailIcon() {
+const EmailIcon= () => {
   return (
     <svg
       width="50px"
@@ -24,3 +24,5 @@ export default function EmailIcon() {
     </svg>
   );
 }
+
+export default EmailIcon;
