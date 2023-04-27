@@ -1,15 +1,17 @@
 
+import { Fragment } from "react";
 import { useState } from "react"; // import state
-import Logo from "../../assets/logo.jpg";
+import Logo from "../../assets/logoDev.png";
 
-const Header = () => {
+const Header = (props) => {
 
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
   return (
-    <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 mt-5 lg:mt-10">
+    <Fragment>
+      <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 mt-5 lg:mt-10">
       <a href="/About.jsx">
-        <img src={Logo} className="h-16 w-16 rounded-full" alt="logo" />
+        <img src={Logo} className="h-12 w-12 " alt="logo" />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -109,6 +111,7 @@ const Header = () => {
       }
     `}</style>
     </div>
+    </Fragment>
   );
 }
 export default Header;
