@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Developer from "../../assets/developer.jpg";
 
 const Main = () => {
+ 
   return (
     <Fragment>
       <section className="flex-col sm:flex sm:flex-row-reverse md:justify-between px-5 lg:px-18 xl:px-20 md:my-4">

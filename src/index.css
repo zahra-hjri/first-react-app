@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Jost';
-    src: url('../src/fonts/Jost-Bold.ttf') format("truetype");
-    src: url('../src/fonts/Jost-Medium.ttf') format('truetype');
-    src: url('../src/fonts/Jost-Regular.ttf') format('truetype');
-
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,9 +11,5 @@
 
 a.active {
     background-color: rgb(8, 221, 139);
-    /* padding-top: 0.4rem; */
-    /* border-radius: 0.2rem; */
-    /* display: block; */
-    /* margin-top: -0.5rem; */
 
 }

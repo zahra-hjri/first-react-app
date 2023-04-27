@@ -2,6 +2,8 @@
 import { Fragment } from "react";
 import { useState } from "react"; // import state
 import Logo from "../../assets/logoDev.png";
+import classes from "./HeaderStyle.module.css"
+
 
 const Header = (props) => {
 
@@ -17,17 +19,17 @@ const Header = (props) => {
         <section className="MOBILE-MENU flex lg:hidden">
           <div
             className="HAMBURGER-ICON space-y-2"
-            onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
+            onClick={() => setIsNavOpen((yes) => !yes)} // toggle isNavOpen state on click
           >
             <span className="block h-0.5 w-7 animate-pulse bg-green-600"></span>
             <span className="block h-0.5 w-7 animate-pulse bg-green-600"></span>
             <span className="block h-0.5 w-7 animate-pulse bg-green-600"></span>
           </div>
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+          <div className={isNavOpen ? classes['showMenuNav'] : classes['hideMenuNav']}>
             {" "}
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
+              className="CROSS-ICON absolute top-0 right-0 px-6 py-7"
               onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
             >
               <svg
@@ -42,23 +44,28 @@ const Header = (props) => {
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
+              
             </div>
+       
+            
             <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden text-black min-h-[200px] font-bold font-mono">
-              <li className="my-3">
+              
+              <li className="my-3 hover:text-green-600">
                 <a href="/about">Work</a>
               </li>
-              <li className="my-3">
+              <li className="my-3 hover:text-green-600">
                 <a href="/portfolio">About</a>
               </li>
-              <li className="my-3">
+              <li className="my-3 hover:text-green-600">
                 <a href="/contact">Services</a>
               </li>
               <li className="my-3 ">
-                <a href="/contact" className="active px-6 py-3 rounded-sm">
+                <a href="/contact" className="active px-6 py-3 rounded-sm hover:text-white">
                   Contact
                 </a>
               </li>
             </ul>
+      
           </div>
         </section>
 
@@ -89,27 +96,6 @@ const Header = (props) => {
           </li>
         </ul>
       </nav>
-      <style>{`
-      .hideMenuNav {
-        display: none;
-      }
-      .showMenuNav {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height:800px;
-        min-height: 100%;
-        top: 0;
-        left: 0;
-        background: white;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        padding-top:100px;
-        align-items: center;
-        
-      }
-    `}</style>
     </div>
     </Fragment>
   );
