@@ -1,20 +1,14 @@
 import { Fragment } from "react";
 import Developer from "../../assets/developer.jpg";
-import { FaMoon } from "react-icons/fa";
+// import { FaMoon } from "react-icons/fa";
 
-import { useState } from "react";
-const Main = () => {
+// import { useState } from "react";
 
-const [ btnClick , setbtnClick ]  = useState(false)
+const Main = ({ toggelChangeBg, setToggelChangeBg }) => {
 
-const clickHandler = ()=>{
-setbtnClick(true)
-  // console.log("man")
-}
- 
   return (
     <Fragment>
-      <section className="flex-col sm:flex sm:flex-row-reverse md:justify-between px-5 lg:px-18 xl:px-20 md:my-4">
+      <section className="flex-col sm:flex sm:flex-row-reverse md:justify-between px-5 lg:px-18 xl:px-20 md:py-6">
       <img
         src={Developer}
         alt="developer"
@@ -27,17 +21,15 @@ setbtnClick(true)
             Zahra Hozhabri
           </strong>
           <br />
-          <span className="text-black px-2">
+          <span className="light:text-black dark:text-white px-2">
             I'm a frontend developer from the Iran,
             <br />I enjoy when I code ... :)
           </span>
           <br />
-          <button onClick={clickHandler} className="bg-transparent hover:bg-green-500 text-green-500 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded mt-10">
+          <button className="bg-transparent hover:bg-green-500 text-green-500 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded">
             a little aboute me
           </button>
-          <div>
-          {btnClick && <FaMoon/>}
-          </div>
+          
         </p>
       </div>
     </section>

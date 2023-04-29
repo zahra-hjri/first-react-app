@@ -1,26 +1,33 @@
 
 import { Fragment } from "react";
 import { useState } from "react"; // import state
-import Logo from "../../assets/logoDev.png";
-import classes from "./HeaderStyle.module.css"
-import { FaMoon } from "react-icons/fa";
+// import Logo from "../../assets/logoDev.png";
+import { FaMoon , FaLaptopCode } from "react-icons/fa";
 import {FiSun} from "react-icons/fi"
+import "./Header.css"
 
 
-const Header = (props) => {
+const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
 
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  // const [darkMode,setDarkMode]=useState(false)
 
+  const toggelBgMode = () => {
+    setToggelChangeBg(!toggelChangeBg);
+  };
   return (
     <Fragment>
-      <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 mt-5 lg:mt-10">
+      <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 pt-5 lg:pt-10">
       <a href="/About.jsx">
-        <img src={Logo} className="h-12 w-12 " alt="logo" />
+        {/* <img src={Logo} className="h-12 w-12 " alt="logo" /> */}
+        <FaLaptopCode className="text-green-600 h-9 w-9 md:h-12 md:w-12 cursor-pointer" />
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
-      <FaMoon className="mx-3 hidden" style={{color: '#037242', fontSize: '1.5rem'}} /> 
-      <FiSun className="mx-3" style={{color: '#037242', fontSize: '1.5rem'}} /> 
+          <div className="icon-dark-mode" onClick={toggelBgMode}>
+            {toggelChangeBg ? (<FiSun />) : ( <FaMoon/>)}
+          </div>
+      
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((yes) => !yes)} // toggle isNavOpen state on click
@@ -30,7 +37,7 @@ const Header = (props) => {
             <span className="block h-0.5 w-7 animate-pulse bg-green-600"></span>
           </div>
 
-          <div className={isNavOpen ? classes['showMenuNav'] : classes['hideMenuNav']}>
+          <div className={isNavOpen ? 'showMenuNav' : 'hideMenuNav'}>
             {" "}
             <div
               className="CROSS-ICON absolute top-0 right-0 px-6 py-7"
@@ -52,18 +59,18 @@ const Header = (props) => {
             </div>
        
             
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden text-black min-h-[200px] font-bold font-mono">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden light:text-black dark:text-green-600 min-h-[200px] font-bold font-mono">
               
-              <li className="my-3 hover:text-green-600">
+              <li className="py-3 hover:text-green-600">
                 <a href="/about">Work</a>
               </li>
-              <li className="my-3 hover:text-green-600">
+              <li className="py-3 hover:text-green-600">
                 <a href="/portfolio">About</a>
               </li>
-              <li className="my-3 hover:text-green-600">
+              <li className="py-3 hover:text-green-600">
                 <a href="/contact">Services</a>
               </li>
-              <li className="my-3 ">
+              <li className="py-3 ">
                 <a href="/contact" className="active px-6 py-3 rounded-sm hover:text-white">
                   Contact
                 </a>
@@ -73,10 +80,11 @@ const Header = (props) => {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex text-black lg:justify-center menu-list font-bold font-mono">
+        <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex light:text-black dark:text-green-600 lg:justify-center menu-list font-bold font-mono">
           
-        <FaMoon className="mx-3 hidden cursor-pointer" style={{color: '#037242', fontSize: '1.5rem'}} /> 
-        <FiSun className="mx-3 cursor-pointer" style={{color: '#037242', fontSize: '1.5rem'}} /> 
+        <div className="icon-dark-mode" onClick={toggelBgMode}>
+            {toggelChangeBg ? (<FiSun />) : ( <FaMoon/>)}
+          </div>
           <li>
             <a href="/about" className="hover:text-green-600">
               Work

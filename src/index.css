@@ -13,3 +13,14 @@ a.active {
     background-color: rgb(8, 221, 139);
 
 }
+
+.dark {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.light {
+    background-color: white;
+}
