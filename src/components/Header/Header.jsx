@@ -3,6 +3,8 @@ import { Fragment } from "react";
 import { useState } from "react"; // import state
 import Logo from "../../assets/logoDev.png";
 import classes from "./HeaderStyle.module.css"
+import { FaMoon } from "react-icons/fa";
+import {FiSun} from "react-icons/fi"
 
 
 const Header = (props) => {
@@ -17,6 +19,8 @@ const Header = (props) => {
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
+      <FaMoon className="mx-3 hidden" style={{color: '#037242', fontSize: '1.5rem'}} /> 
+      <FiSun className="mx-3" style={{color: '#037242', fontSize: '1.5rem'}} /> 
           <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((yes) => !yes)} // toggle isNavOpen state on click
@@ -70,6 +74,9 @@ const Header = (props) => {
         </section>
 
         <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex text-black lg:justify-center menu-list font-bold font-mono">
+          
+        <FaMoon className="mx-3 hidden cursor-pointer" style={{color: '#037242', fontSize: '1.5rem'}} /> 
+        <FiSun className="mx-3 cursor-pointer" style={{color: '#037242', fontSize: '1.5rem'}} /> 
           <li>
             <a href="/about" className="hover:text-green-600">
               Work

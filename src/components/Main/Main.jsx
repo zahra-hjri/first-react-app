@@ -1,7 +1,16 @@
 import { Fragment } from "react";
 import Developer from "../../assets/developer.jpg";
+import { FaMoon } from "react-icons/fa";
 
+import { useState } from "react";
 const Main = () => {
+
+const [ btnClick , setbtnClick ]  = useState(false)
+
+const clickHandler = ()=>{
+setbtnClick(true)
+  // console.log("man")
+}
  
   return (
     <Fragment>
@@ -23,9 +32,12 @@ const Main = () => {
             <br />I enjoy when I code ... :)
           </span>
           <br />
-          <button className="bg-transparent hover:bg-green-500 text-green-500 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded mt-10">
+          <button onClick={clickHandler} className="bg-transparent hover:bg-green-500 text-green-500 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded mt-10">
             a little aboute me
           </button>
+          <div>
+          {btnClick && <FaMoon/>}
+          </div>
         </p>
       </div>
     </section>
