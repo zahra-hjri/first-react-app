@@ -16,7 +16,7 @@ export default function App() {
           setToggelChangeBg={setToggelChangeBg}
         />
         <Main />
-        <div className={`h-screen ${toggelChangeBg ? "dark" : "light"}`}>
+        <div className={` ${toggelChangeBg ? "dark" : "light"}`}>
           <Footer />
         </div>
       </div>

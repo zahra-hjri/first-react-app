@@ -59,7 +59,7 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
             </div>
        
             
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden light:text-black dark:text-green-600 min-h-[200px] font-bold font-mono">
+            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden min-h-[200px] font-bold font-mono">
               
               <li className="py-3 hover:text-green-600">
                 <a href="/about">Work</a>
@@ -80,7 +80,7 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex light:text-black dark:text-green-600 lg:justify-center menu-list font-bold font-mono">
+        <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex lg:justify-center menu-list font-bold font-mono">
           
         <div className="icon-dark-mode" onClick={toggelBgMode}>
             {toggelChangeBg ? (<FiSun />) : ( <FaMoon/>)}
@@ -104,7 +104,7 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
           <li>
             <a
               href="/contact"
-              className="hover:text-white active px-6 py-2 -mt-1 rounded-sm block"
+              className="hover:text-white bg-green-500 active px-6 py-2 -mt-1 rounded-sm block"
             >
               Contact
             </a>
