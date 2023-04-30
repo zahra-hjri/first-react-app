@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/first-react-app/static/css/main.311533b5.css",
-    "main.js": "/first-react-app/static/js/main.52e3fe2d.js",
-    "static/media/developer.jpg": "/first-react-app/static/media/developer.2dc3e3b8c00153d08fb5.jpg",
+    "main.css": "/first-react-app/static/css/main.2ead19df.css",
+    "main.js": "/first-react-app/static/js/main.da8ced34.js",
+    "static/media/Web-Developer-removebg-preview.png": "/first-react-app/static/media/Web-Developer-removebg-preview.0c0d35abef294e742020.png",
     "index.html": "/first-react-app/index.html",
-    "main.311533b5.css.map": "/first-react-app/static/css/main.311533b5.css.map",
-    "main.52e3fe2d.js.map": "/first-react-app/static/js/main.52e3fe2d.js.map"
+    "main.2ead19df.css.map": "/first-react-app/static/css/main.2ead19df.css.map",
+    "main.da8ced34.js.map": "/first-react-app/static/js/main.da8ced34.js.map"
   },
   "entrypoints": [
-    "static/css/main.311533b5.css",
-    "static/js/main.52e3fe2d.js"
+    "static/css/main.2ead19df.css",
+    "static/js/main.da8ced34.js"
   ]
 }
