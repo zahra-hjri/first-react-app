@@ -8,7 +8,7 @@ import TelegramIcon from "../TelegramIcon/TelegramIcon";
 const Footer = ({ toggelChangeBg, setToggelChangeBg }) => {
   return (
     <Fragment>
-      <div className="border border-slate-900 mx-32">
+      <div className="border border-slate-500 mx-10 sm:mx-16 md:mx-32">
         
       </div>
       <footer className="w-full h-32 md:h-48 flex justify-center items-center space-x-2 md:space-x-5 pt-10">

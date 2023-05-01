@@ -17,13 +17,13 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
   };
   return (
     <Fragment>
-      <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 pt-5 lg:pt-10">
+      <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 py-7">
       <a href="/About.jsx">
         {/* <img src={Logo} className="h-12 w-12 " alt="logo" /> */}
         <FaLaptopCode className="text-green-600 h-9 w-9 md:h-12 md:w-12 cursor-pointer" />
       </a>
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden">
+        <section className="MOBILE-MENU flex lg:hidden ">
           <div className="icon-dark-mode" onClick={toggelBgMode}>
             {toggelChangeBg ? (<FiSun />) : ( <FaMoon/>)}
           </div>
