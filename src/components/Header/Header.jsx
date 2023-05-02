@@ -1,7 +1,6 @@
 
 import { Fragment } from "react";
-import { useState } from "react"; // import state
-// import Logo from "../../assets/logoDev.png";
+import { useState } from "react";
 import { FaMoon , FaLaptopCode } from "react-icons/fa";
 import {FiSun} from "react-icons/fi"
 import "./Header.css"
@@ -29,7 +28,7 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
           </div>
       
           <div
-            className="HAMBURGER-ICON space-y-2"
+            className= "HAMBURGER-ICON space-y-2"
             onClick={() => setIsNavOpen((yes) => !yes)} // toggle isNavOpen state on click
           >
             <span className="block h-0.5 w-7 animate-pulse bg-green-600"></span>

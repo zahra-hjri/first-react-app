@@ -19,6 +19,43 @@
 
 }
 
+/* .light {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    align-items: center;
+
+} */
+
+/* .dark {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    align-items: center;
+
+} */
+
+
+
 .icon-dark-mode {
     color: #03b165;
     font-size: 1.5rem;
