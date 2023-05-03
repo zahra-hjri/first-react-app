@@ -11,7 +11,8 @@ const Footer = ({ toggelChangeBg, setToggelChangeBg }) => {
       <div className="border border-slate-500 mx-10 sm:mx-16 md:mx-32">
         
       </div>
-      <footer className="w-full h-32 md:h-48 flex justify-center items-center space-x-2 md:space-x-5 pt-10">
+        <p className="text-center text-2xl font-mono font-bold pt-10 text-gray-600">FOLLOW ME</p>
+      <footer className="w-full h-32 flex justify-center items-center space-x-2 md:space-x-5">
       <a
         href="/"
         className="transform hover:scale-125 hover:transition duration-500 ease-in-out"

@@ -1,4 +1,4 @@
-
+import { menu } from "../../menuData";
 import { Fragment } from "react";
 import { useState } from "react";
 import { FaMoon , FaLaptopCode } from "react-icons/fa";
@@ -58,57 +58,48 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
             </div>
        
             
-            <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden min-h-[200px] font-bold font-mono">
-              
-              <li className="py-3 hover:text-green-600">
-                <a href="/about">Work</a>
-              </li>
-              <li className="py-3 hover:text-green-600">
-                <a href="/portfolio">About</a>
-              </li>
-              <li className="py-3 hover:text-green-600">
-                <a href="/contact">Services</a>
-              </li>
-              <li className="py-3 ">
+            <div className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden min-h-[200px] font-bold font-mono">
+            {menu.map((list) => (
+            <a href={list.link} className="py-3 hover:text-green-600">{list.name}</a>
+          ))}
+                {/* <a className="py-3 hover:text-green-600" href="/about">Work</a>
+                <a className="py-3 hover:text-green-600" href="/portfolio">About</a>
+                <a className="py-3 hover:text-green-600" href="/contact">Services</a>
                 <a href="/contact" className="active px-6 py-3 rounded-sm hover:text-white">
                   Contact
-                </a>
-              </li>
-            </ul>
+                </a> */}
+            </div>
       
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU  hidden space-x-10 lg:flex lg:justify-center menu-list font-bold font-mono">
+        <div className="DESKTOP-MENU  hidden space-x-10 lg:flex lg:justify-center menu-list font-bold font-mono">
           
         <div className="icon-dark-mode" onClick={toggelBgMode}>
             {toggelChangeBg ? (<FiSun />) : ( <FaMoon/>)}
           </div>
-          <li>
-            <a href="/about" className="hover:text-green-600">
-              Work
-            </a>
-          </li>
 
-          <li>
-            <a href="/portfolio" className="hover:text-green-600">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/service" className="hover:text-green-600">
-              Services
-            </a>
-          </li>
-          <li>
-            <a
+          {menu.map((list) => (
+            <a href={list.link} className="hover:text-green-600">{list.name}</a>
+          ))}
+
+             {/* <a href="/about" className="hover:text-green-600">
+               Work
+             </a>
+         
+             <a href="/portfolio" className="hover:text-green-600">
+               About
+             </a>
+         
+             <a href="/service" className="hover:text-green-600">
+               Services
+             </a>
+             <a
               href="/contact"
-              className="hover:text-white bg-green-500 active px-6 py-2 -mt-1 rounded-sm block"
-            >
+              className="hover:text-white bg-green-500 active px-6 py-2 -mt-1 rounded-sm block">
               Contact
-            </a>
-          </li>
-        </ul>
+            </a> */}
+        </div>
       </nav>
     </div>
     </Fragment>
