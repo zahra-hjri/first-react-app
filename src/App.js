@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import Introduction from "./components/Introduction/Introduction";
+// import Introduce from "./components/Introduce/introduce";
 import Footer from "./components/Footer/Footer";
 // import DarkMode from "./components/DarkMode/DarkMode";
 import "./index.css";
@@ -20,6 +22,14 @@ export default function App() {
           toggelChangeBg={toggelChangeBg}
           setToggelChangeBg={setToggelChangeBg}
         />
+        <Introduction
+          toggelChangeBg={toggelChangeBg}
+          setToggelChangeBg={setToggelChangeBg}
+        />
+        {/* <Introduce
+          toggelChangeBg={toggelChangeBg}
+          setToggelChangeBg={setToggelChangeBg}
+        /> */}
         <div className={` ${toggelChangeBg ? "dark" : "light"}`}>
           <Footer />
         </div>

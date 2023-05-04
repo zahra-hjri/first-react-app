@@ -6,7 +6,7 @@ export const menu = [
   },
   {
     id: 2,
-    name: "About us",
+    name: "About me",
     link: "https://github.com/",
   },
   {

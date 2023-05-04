@@ -9,7 +9,6 @@ import "./Header.css"
 const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
 
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
-  // const [darkMode,setDarkMode]=useState(false)
 
   const toggelBgMode = () => {
     setToggelChangeBg(!toggelChangeBg);
@@ -18,7 +17,6 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
     <Fragment>
       <div className="flex items-center justify-between px-5 md:px-8 lg:px-13 xl:px-20 py-7">
       <a href="/About.jsx">
-        {/* <img src={Logo} className="h-12 w-12 " alt="logo" /> */}
         <FaLaptopCode className="text-green-600 h-9 w-9 md:h-12 md:w-12 cursor-pointer" />
       </a>
       <nav>
@@ -59,15 +57,11 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
        
             
             <div className="MENU-LINK-MOBILE-OPEN flex flex-col items-center overflow-y-hidden min-h-[200px] font-bold font-mono">
-            {menu.map((list) => (
-            <a href={list.link} className="py-3 hover:text-green-600">{list.name}</a>
-          ))}
-                {/* <a className="py-3 hover:text-green-600" href="/about">Work</a>
-                <a className="py-3 hover:text-green-600" href="/portfolio">About</a>
-                <a className="py-3 hover:text-green-600" href="/contact">Services</a>
-                <a href="/contact" className="active px-6 py-3 rounded-sm hover:text-white">
-                  Contact
-                </a> */}
+              {menu.map((list) => (
+              <a href={list.link} className={` ${list.name === 'Contact' ?
+              "active bg-green-500 px-6 py-3 rounded-sm hover:text-white" 
+              : "py-3 hover:text-green-600"}}`}>{list.name}</a>
+            ))}
             </div>
       
           </div>
@@ -80,25 +74,10 @@ const Header = ({ toggelChangeBg, setToggelChangeBg }) => {
           </div>
 
           {menu.map((list) => (
-            <a href={list.link} className="hover:text-green-600">{list.name}</a>
+            <a href={list.link} className={` ${list.name === 'Contact' ?
+             "bg-green-500 px-6 py-2 -mt-1 rounded-sm block hover:text-white" 
+             : "hover:text-green-600"}}`}>{list.name}</a>
           ))}
-
-             {/* <a href="/about" className="hover:text-green-600">
-               Work
-             </a>
-         
-             <a href="/portfolio" className="hover:text-green-600">
-               About
-             </a>
-         
-             <a href="/service" className="hover:text-green-600">
-               Services
-             </a>
-             <a
-              href="/contact"
-              className="hover:text-white bg-green-500 active px-6 py-2 -mt-1 rounded-sm block">
-              Contact
-            </a> */}
         </div>
       </nav>
     </div>
